@@ -1,18 +1,18 @@
-import logo from './Logo.png.png';
-import './App.css';
+import React from 'react';
+import FormContainer from './components/auth/FormContainer';
+import { Header } from './components/tools/Header';
+import './App.css'; 
+// import SignupForm from './components/auth/signup/SignupForm';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Norophilia
-        </p>
-
-      </header>
+      <Header />
+      <FormContainer  />
+      {/* <SignupForm />  */}
+     
     </div>
   );
-}
+};
 
 export default App;
